@@ -1,10 +1,22 @@
 body {
     background-image: url("cloud.gif");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-color: #cccccc;
-    background-size: cover;
+    background-size: 100% 200%;
     display: flex;
     justify-content: center;
     text-align: center;
     font-family: 'IM Fell DW Pica', serif;
+}
+
+.TS {
+    text-shadow: 2px 2px 8px #5cc5f6;
+}
+
+.counter {
+    font-size: 3em;
+}
+
+button {
+    margin: 0.3em;
 }
