@@ -14,10 +14,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'frontend/action/index.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _frontend_action_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./frontend/action/index */ "./frontend/action/index.js");
 
 
- //testing for git
+
 
 function App() {
   var counter = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
@@ -30,20 +30,51 @@ function App() {
     className: "counter"
   }, counter), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     onClick: function onClick() {
-      return dispatch(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'frontend/action/index.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())());
+      return dispatch((0,_frontend_action_index__WEBPACK_IMPORTED_MODULE_2__.decrement)());
     }
   }, "Decrease"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     onClick: function onClick() {
-      return dispatch(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'frontend/action/index.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())());
+      return dispatch((0,_frontend_action_index__WEBPACK_IMPORTED_MODULE_2__.reset)());
     }
   }, "Reset"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     onClick: function onClick() {
-      return dispatch(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'frontend/action/index.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())());
+      return dispatch((0,_frontend_action_index__WEBPACK_IMPORTED_MODULE_2__.increment)());
     }
   }, "Increase"));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./frontend/action/index.js":
+/*!**********************************!*\
+  !*** ./frontend/action/index.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "increment": () => (/* binding */ increment),
+/* harmony export */   "decrement": () => (/* binding */ decrement),
+/* harmony export */   "reset": () => (/* binding */ reset)
+/* harmony export */ });
+var increment = function increment() {
+  return {
+    type: "INCREMENT"
+  };
+};
+var decrement = function decrement() {
+  return {
+    type: "DECREMENT"
+  };
+};
+var reset = function reset() {
+  return {
+    type: "RESET"
+  };
+};
 
 /***/ }),
 

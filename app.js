@@ -4,7 +4,7 @@ import {
     decrement,
     increment,
     reset,
-} from "frontend/action/index.js"; //testing for git
+} from "./frontend/action/index";
 
 function App() {
     const counter = useSelector((state) => state);
