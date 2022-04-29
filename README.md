@@ -4,4 +4,4 @@
 
 a react practice
 
-Dedicated to our TA from app academy, who is the number one Taylor Swift fan.
+Dedicated to our TA from App Academy, who is *the* number one Taylor Swift fan.
