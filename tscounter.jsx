@@ -18,7 +18,6 @@ const store = createStore(
 //             </Provider>
 //         </div>
 //     );
-// }
 
 const Swift = ({ store }) => (
     <Provider store={store}>
