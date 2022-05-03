@@ -2,7 +2,7 @@
 
 [check it out here](https://yu-huanwu.github.io/TA_TS_Counter/)
 
-a simple react practice
+a simple React practice
 
 Dedicated to our TA from App Academy, who is *the* number one Taylor Swift fan.
 
